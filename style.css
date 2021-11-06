@@ -25,6 +25,7 @@ body {
   height: 79%;
   width: 30%;
   background: url("img/85867903_p0_master1200.png");
+  background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
   transition: 0.25s;
@@ -32,6 +33,7 @@ body {
 
 .text:hover {
   background: url("img/keqing-blur.png");
+  background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
   font-size: 30px;
