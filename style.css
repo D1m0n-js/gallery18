@@ -1,0 +1,44 @@
+:root {
+  --gradient: linear-gradient(#48dbfb, #54a0ff);
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  border-color: var(--gradient);
+  font-size: 0px;
+  display: flex;
+  color: white;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 79%;
+  width: 30%;
+  background: url("img/85867903_p0_master1200.png");
+  background-size: 100%;
+  background-position: center;
+  transition: 0.25s;
+}
+
+.text:hover {
+  background: url("img/keqing-blur.png");
+  background-size: 100%;
+  background-position: center;
+  font-size: 30px;
+  text-decoration: underline;
+  display: flex;
+  color: white;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 40%;
+  transition: 0.25s;
+  border: 100px;
+  border-image: var(--gradient);
+  border-radius: 100px;
+}
+
+

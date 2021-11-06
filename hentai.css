@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+*,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 10rem;
+}
+
+.galeria {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "img-1 img-2 img-3 img-4"
+    "img-1 img-5 img-6 img-4"
+    "img-1 img-5 img-6 img-7"
+    "img-8 img-11 img-10 img-9"
+    "img-8 img-13 img-12 img-9"
+    "img-8 img-13 img-12 img-15"
+    "img-14 img-17 img-18 img-19";
+}
+
+.galeria a {
+  width: 100%;
+  height: 25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.galeria a ion-icon {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 3rem;
+  position: relative;
+  z-index: 100;
+  padding: 1rem 3rem;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.galeria a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.galeria a:hover ion-icons,
+.galeria a:hover::before {
+  opacity: 1;
+}
+
+.img-1 {
+  grid-area: img-1;
+  background-image: url("keqing/85504761_p0_master1200.jpg");
+  min-height: 80rem;
+  min-width: 25rem;
+}
+.img-2 {
+  min-width: 50rem;
+  grid-area: img-2;
+  background-image: url("keqing/85664905_p0_master1200.jpg");
+}
+.img-3 {
+  min-width: 20rem;
+
+  grid-area: img-3;
+  background-image: url("keqing/84808402_p0_master1200.jpg");
+}
+.img-4 {
+  min-width: 60rem;
+  min-height: 50rem;
+  grid-area: img-4;
+  background-image: url("keqing/85120647_p0_master1200.jpg");
+}
+.img-5 {
+  min-height: 50rem;
+  min-width: 40rem;
+  grid-area: img-5;
+  background-image: url("keqing/85251421_p0_master1200.jpg");
+}
+.img-6 {
+  min-height: 50rem;
+  min-width: 30rem;
+  grid-area: img-6;
+  background-image: url("keqing/85963063_p0_master1200.jpg");
+}
+.img-7 {
+  grid-area: img-7;
+  background-image: url("keqing/86163305_p0_master1200.jpg");
+}
+.img-8 {
+  min-height: 81.5rem;
+  grid-area: img-8;
+  background-image: url("keqing/87407413_p0_master1200.jpg");
+}
+.img-9 {
+  min-height: 50rem;
+  grid-area: img-9;
+  background-image: url("keqing/89784312_p0_master1200.jpg");
+}
+.img-10 {
+  min-height: 30rem;
+  grid-area: img-10;
+  background-image: url("keqing/90512672_p0_master1200.jpg");
+}
+.img-11 {
+  min-height: 30rem;
+  grid-area: img-11;
+  background-image: url("keqing/90673924_p0_master1200.jpg");
+}
+.img-12 {
+  min-height: 50rem;
+  grid-area: img-12;
+  background-image: url("keqing/90697734_p0_master1200.jpg");
+}
+.img-13 {
+  min-height: 50rem;
+  grid-area: img-13;
+  background-image: url("keqing/91047484_p0_master1200.jpg");
+}
+.img-14 {
+  min-height: 80rem;
+  grid-area: img-14;
+  background-image: url("keqing/91433972_p0_master1200.jpg");
+}
+.img-15 {
+  grid-area: img-15;
+  background-image: url("keqing/91677159_p0_master1200.jpg");
+}
+.img-16 {
+  grid-area: img-16;
+  background-image: url("keqing/91994914_p0_master1200.jpg");
+}
+.img-17 {
+  min-height: 80rem;
+  grid-area: img-17;
+  background-image: url("keqing/image4.jpg");
+}
+.img-18 {
+  min-height: 80rem;
+  grid-area: img-18;
+  background-image: url("keqing/image8.jpg");
+}
+.img-19 {
+  min-height: 80rem;
+  grid-area: img-19;
+  background-image: url("keqing/RDT_20210711_0834456820802890941659894.jpg");
+}
