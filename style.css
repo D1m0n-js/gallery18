@@ -6,6 +6,17 @@ body {
   padding: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .text {
+    background-attachment: initial;
+  }
+}
+@media screen and (max-width: 768px) {
+  .text:hover {
+    background-attachment: initial;
+  }
+}
+
 .text {
   border-color: var(--gradient);
   font-size: 0px;
@@ -40,5 +51,3 @@ body {
   border-image: var(--gradient);
   border-radius: 100px;
 }
-
-
